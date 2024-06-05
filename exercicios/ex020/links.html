@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+            # = ID
+            . = class
+            : = pseudo-classes
+            :: = pseudo-elementos
+            > = filho
+
+        */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a::before {
+            content:'➔';
+            color: red;
+        }
+        a::after {
+            content: '[link]';
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personaliozando links</h1>
+    <ul>
+        <li> <a href="https://www.nike.com.br" target="_blank" >Site da Nike</a>
+
+        <li> <a href="https://www.adidas.com.br" target="_blank">Site da Adidas</a>
+
+        <li> <a href="https://br.puma.com" target="_blank">Site da Puma</a>
+
+
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+     <h1> Imagem dinâmica </h1>
+     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+     <picture>
+        <source media="(max-width:750px )" srcset="img/P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="img/M.png" type="image/png">
+        <img src="Img/G.png" alt="Imagem G, flexível">
+
+        </picture>
+        <h1>Reprodução de Áudio</h1>
+
+           <p>Reproduzindo áudio em HTML</p>
+       
+           <!--temos MP3,WAV, OGG-->
+         <audio preload="metadata" autoplay controls>
+            
+            <source src="midia/Your Intro - Audionautix.mp3" type="audio/mpeg">
+            <source src="midia/Your Intro - Audionautrix.ogg" type="audio/ogg">
+            <source src="midia/Your Intro - Audionautrix.wav" type="audio/wav"> <!--Evitar usar esse, apenas para arquivos muito grandes.-->
+            
+            <p>Infelizmente seu navegador não suporta áudio, <a href="midia/Your Intro - Audionautrix.mp3">clique aqui para baixar o arquivo</a></p>
+         </audio>
+         
+           
+
+        
+       
+</body>
+</html>
